@@ -28,7 +28,7 @@
             <em class="glyphicon glyphicon-user"></em>
         </div>
             <form action="check-login.php" class="inner-login" method="post">
-            <h3 class="text-center title-login">Login Member</h3>
+            <h3 class="text-center title-login">Welcome To My Smarthome</h3>
                 <div class="form-group">
                     <input type="text" class="form-control" name="username" placeholder="Username">
                 </div>
@@ -40,7 +40,7 @@
                 <input type="submit" class="btn btn-block btn-custom-green" value="LOGIN" />
                 
                 <div class="text-center forget">
-                    <p>Forgot Password ?</p>
+                    <p>Silakan LOGIN untuk akses sistem</p>
                 </div>
             </form>
         </div>

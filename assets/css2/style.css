@@ -65,4 +65,9 @@
   transform: translateY(4px);
 }
 
+.notif{
+    
+    max-width:  30%;
+    height: auto;
+}
 

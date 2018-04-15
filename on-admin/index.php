@@ -91,8 +91,9 @@ echo "<tr>
 			</form>
 		</td>
 
-		<td class='huruf'>$status[0]</td><td class='huruf'>$ruangan[$i]</td>
+		<td id='status".$i."' class='huruf'>$status[0]</td><td class='huruf'>$ruangan[$i]</td>
 	</tr>";
+
 	
 			//memberi nilai pada pin
 	
@@ -126,11 +127,15 @@ if($gpio_check4==1){
 	echo "<script type=\"text/javascript\">
 	document.getElementById('lampu_0').src='../assets/img/lamp_hidup_0.png';
 	</script>";
+	echo "<script type=\"text/javascript\">
+	document.getElementById('status0').textContent='HIDUP';</script>";
 }
 else {
 	echo "<script type=\"text/javascript\">
 	document.getElementById('lampu_0').src='../assets/img/lamp_mati_0.png';
 	</script>";
+	echo "<script type=\"text/javascript\">
+	document.getElementById('status0').textContent='MATI';</script>";
 }
 
 $gpio_check3 = shell_exec("gpio -g read 3");
@@ -138,23 +143,31 @@ if($gpio_check3==1){
 	echo "<script type=\"text/javascript\">
 	document.getElementById('lampu_1').src='../assets/img/lamp_hidup_1.png';
 	</script>";
+	echo "<script type=\"text/javascript\">
+	document.getElementById('status1').textContent='HIDUP';</script>";
 }
 else {
 	echo "<script type=\"text/javascript\">
 	document.getElementById('lampu_1').src='../assets/img/lamp_mati_1.png';
 	</script>";
-		}
+	echo "<script type=\"text/javascript\">
+	document.getElementById('status1').textContent='MATI';</script>";
+}
 
 $gpio_check2 = shell_exec("gpio -g read 2");
 if($gpio_check2==1){
 	echo "<script type=\"text/javascript\">
 	document.getElementById('lampu_2').src='../assets/img/lamp_hidup_2.png';
 	</script>";
+	echo "<script type=\"text/javascript\">
+	document.getElementById('status2').textContent='HIDUP';</script>";
 }
 else {
 	echo "<script type=\"text/javascript\">
 	document.getElementById('lampu_2').src='../assets/img/lamp_mati_2.png';
 	</script>";
+	echo "<script type=\"text/javascript\">
+	document.getElementById('status2').textContent='MATI';</script>";
 	}
 ?>
 
